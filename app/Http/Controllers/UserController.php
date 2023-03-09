@@ -111,9 +111,8 @@ class UserController extends Controller
             return $this->returnResponse(false, "No any events on this year");
         }
     }
-
     /*
-    
+
     public function allExamples()
     {
 

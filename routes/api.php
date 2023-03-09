@@ -36,7 +36,6 @@ Route::middleware(['auth:sanctum'])->group(function () {
         // For Example Purpose : Route::get('/all-Example','allExample')->name('all-Example');
     });
 });
-
 // Guest User
 Route::controller(AuthController::class)->prefix('user')->group(function () {
     Route::post('/create', 'create')->name('create');

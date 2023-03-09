@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Auth;
 class AuthController extends Controller
 {
     use ResponseTrait;
+    
     public function create(Request $request)
     {
         $validation = Validator::make($request->all(), [

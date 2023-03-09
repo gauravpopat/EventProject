@@ -25,6 +25,7 @@ class AdminController extends Controller
                 'location'              => 'required|max:40|string'
             ]);
 
+            
             if ($validation->fails())
                 return $this->validationErrorsResponse($validation);
 
